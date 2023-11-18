@@ -1,0 +1,75 @@
+.productMain {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.product {
+  max-width: 140rem;
+  margin: auto;
+  padding-top: 12rem;
+  padding-bottom: 16.8rem;
+
+  display: flex;
+
+  .img__cont {
+    width: 55%;
+    height: 100%;
+    position: relative;
+
+    .girl {
+      width: 100%;
+      padding-left: 9rem;
+    }
+
+    .card {
+      width: 47%;
+      position: absolute;
+      bottom: -9.5rem;
+      left: 2rem;
+      padding: 0;
+      margin: 0;
+
+      filter: drop-shadow(0 2rem 4rem rgba(#000, 0.2));
+    }
+  }
+
+  &__text {
+    margin-left: 8.6rem;
+    width: 45%;
+
+    .pt {
+      font-size: 2.5rem;
+      line-height: 3.9rem;
+      color: #424242;
+    }
+
+    .ph {
+      font-family: Georgia;
+      font-size: 5rem;
+      line-height: 7.8rem;
+      color: #01996d;
+      margin-bottom: 2rem;
+    }
+
+    .pp {
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #424242;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    flex-direction: column;
+
+    &__text {
+      width: 100%;
+      margin-left: 0rem;
+      margin-top: 14rem;
+    }
+  }
+  .img__cont {
+    width: 100% !important;
+  }
+}

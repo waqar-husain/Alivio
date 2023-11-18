@@ -1,0 +1,39 @@
+.footer {
+  color: #fff;
+  background-color: #245852;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  &__box {
+    max-width: 140rem;
+    margin: auto;
+    padding-top: 9.5rem;
+    padding-bottom: 14.4rem;
+  }
+
+  &__head {
+    font-size: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  &__list {
+    font-size: 2.5rem;
+    list-style: none;
+
+    & > *:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px;
+      border-bottom: 1px solid rgb(212, 212, 212);
+      color: rgb(212, 212, 212);
+    }
+  }
+}
